@@ -4,6 +4,8 @@ var box3 = document.getElementById('box3');
 
 function red() {
   box.style.backgroundColor="lightgreen";
+  box.height = "200px";
+  box.width = "200px";
 }
 
 function pink() {
@@ -15,6 +17,9 @@ function blue() {
 }
 
 function leave(){
+  box.style.transition = "all 1s"; 
+  box2.style.transition = "all 1s"; 
+  box3.style.transition = "all 1s"; 
   box.style.backgroundColor="white";
   box2.style.backgroundColor="white";
   box3.style.backgroundColor="white";
