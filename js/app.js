@@ -4,8 +4,8 @@ var box3 = document.getElementById('box3');
 
 function red() {
   box.style.backgroundColor="lightgreen";
-  box.height = "200px";
-  box.width = "200px";
+  box.style.height = "200px";
+  box.style.width = "200px";
 }
 
 function pink() {
