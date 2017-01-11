@@ -26,11 +26,19 @@ function blue() {
 }
 
 function leave(){
-  for (var i = 0; i < 3; i++) {
+  /*for (var i = 0; i < 3; i++) {
     aBox[i].style.transition = "all 0.5s"; 
     aBox[i].style.backgroundColor="white";
     aBox[i].style.height = "100px";
     aBox[i].style.width = "100px";
+  }*/
+  for (var i = 0; i < 3; i++) {
+    if (aBox[i].backgroundColor!="white") {
+      aBox[i].style.transition = "all 0.5s"; 
+      aBox[i].style.backgroundColor="white";
+      aBox[i].style.height = "100px";
+      aBox[i].style.width = "100px";
+    }
   }
 }
 
